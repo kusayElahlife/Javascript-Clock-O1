@@ -12,7 +12,15 @@ document.addEventListener("DOMContentLoaded",function myFunction() {
         let h = today.getHours();
         let m = today.getMinutes();
         let s = today.getSeconds();
-        let d = today.getDay();
+        let weekday = new Array(7);
+            weekday[0] = "Pazar";
+            weekday[1] = "Pazartesi";
+            weekday[2] = "Salı";
+            weekday[3] = "Çarşamba";
+            weekday[4] = "Perşembe";
+            weekday[5] = "Cuma";
+            weekday[6] = "Cumartesi";
+        let d =weekday[today.getDay()]
         h = checkTime(h);
         m = checkTime(m);
         s = checkTime(s);
